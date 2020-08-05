@@ -11,18 +11,48 @@
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
      <link rel="stylesheet" href="style.css">
      <style>
-          @media only screen and (max-width 767px)
+          @media only screen and (max-width: 767px)
           {
-               .gottaKeepEmSeperated
+               img.imgLeft
                {
-                    visibility: visible;
+                    float: left; margin-right: 15px; margin-right: 15px; width: 100%; height: calc(width*2 +(width/3));
+               }
+               img.imgRight
+               {
+                    float: right; margin-right: 15px; margin-left: 15px; width: 100%; height: calc(width*2 +(width/3));
                }
           }
-          @media only screen and (min-width 768px)
+          @media only screen and (max-width: 1000px)
           {
-               .gottaKeepEmSeperated
+               img.imgLeft
                {
-                    visibility: hidden;
+                    float: left; margin-right: 15px; margin-right: 15px; width: 60%; height: calc(width*2 +(width/3));
+               }
+               img.imgRight
+               {
+                    float: right; margin-right: 15px; margin-left: 15px; width: 60%; height: calc(width*2 +(width/3));
+               }
+          }
+          @media only screen and (max-width: 1095px)
+          {
+               img.imgLeft
+               {
+                    float: left; margin-right: 15px; margin-right: 15px; width: 40%; height: calc(width*2 +(width/3));
+               }
+               img.imgRight
+               {
+                    float: right; margin-right: 15px; margin-left: 15px; width: 40%; height: calc(width*2 +(width/3));
+               }
+          }
+          @media only screen and (min-width: 1096px)
+          {
+               img.imgLeft
+               {
+                    float: left; margin-right: 15px; margin-right: 15px; width: 20%; height: calc(width*2 +(width/3));
+               }
+               img.imgRight
+               {
+                    float: right; margin-right: 15px; margin-left: 15px; width: 0%; height: calc(width*2 +(width/3));
                }
           }
      </style>
@@ -44,14 +74,14 @@
           
           <border class="col-10">
                <article class="row">
-                    <p class="col-md-8"><img class="border border-primary rounded" src="https://placehold.it/300x700" alt="Placeholder image" width="30%" height="70%" style="float: left; margin-right: 15px; margin-left: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ea ex distinctio temporibus sequi delectus non omnis quia debitis, optio voluptatem placeat iure fugiat facilis ut ullam rerum! Distinctio, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto error, eius excepturi distinctio dolorem sit animi voluptatem illum perferendis. Dicta dolorum nam modi amet voluptas similique illum soluta deleniti error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, est illo? Reiciendis maxime modi pariatur aliquam eveniet incidunt, velit quibusdam, aperiam iusto id accusamus perferendis corrupti et nihil, dolorem iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem ex, illo ducimus nihil tempora, laboriosam alias nulla fuga dolore cum atque deleniti, dolorem voluptatem quod labore temporibus nemo pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deserunt sit esse repudiandae expedita voluptas nostrum. Fuga voluptates, quisquam, velit unde quibusdam ipsam beatae dolores in recusandae, quo suscipit laudantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius cum aut adipisci cumque magni porro harum. Voluptate debitis maiores, consequatur natus dolore incidunt est in esse autem doloremque reprehenderit ducimus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit inventore tempora voluptatem hic modi iste mollitia? Temporibus facilis vero magni voluptatem optio eos iure dignissimos, libero minus modi, quis necessitatibus!</p>
+                    <p class="col-md-8"><img class="border border-primary rounded imgLeft" src="https://placehold.it/300x700" alt="Placeholder image" width="30%"  >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ea ex distinctio temporibus sequi delectus non omnis quia debitis, optio voluptatem placeat iure fugiat facilis ut ullam rerum! Distinctio, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto error, eius excepturi distinctio dolorem sit animi voluptatem illum perferendis. Dicta dolorum nam modi amet voluptas similique illum soluta deleniti error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, est illo? Reiciendis maxime modi pariatur aliquam eveniet incidunt, velit quibusdam, aperiam iusto id accusamus perferendis corrupti et nihil, dolorem iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem ex, illo ducimus nihil tempora, laboriosam alias nulla fuga dolore cum atque deleniti, dolorem voluptatem quod labore temporibus nemo pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime deserunt sit esse repudiandae expedita voluptas nostrum. Fuga voluptates, quisquam, velit unde quibusdam ipsam beatae dolores in recusandae, quo suscipit laudantium? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius cum aut adipisci cumque magni porro harum. Voluptate debitis maiores, consequatur natus dolore incidunt est in esse autem doloremque reprehenderit ducimus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit inventore tempora voluptatem hic modi iste mollitia? Temporibus facilis vero magni voluptatem optio eos iure dignissimos, libero minus modi, quis necessitatibus!</p>
                </article>
                <article class="row">
-                    <p class="col-md-8"><img class="border border-primary rounded"src="https://placehold.it/300x700" alt="Placeholder image" width="30%" height="70%" style="float: right;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ea ex distinctio temporibus sequi delectus non omnis quia debitis, optio voluptatem placeat iure fugiat facilis ut ullam rerum! Distinctio, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto error, eius excepturi distinctio dolorem sit animi voluptatem illum perferendis. Dicta dolorum nam modi amet voluptas similique illum soluta deleniti error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, est illo? Reiciendis maxime modi pariatur aliquam eveniet incidunt, velit quibusdam, aperiam iusto id accusamus perferendis corrupti et nihil, dolorem iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem ex, illo ducimus nihil tempora, laboriosam alias nulla fuga dolore cum atque deleniti, dolorem voluptatem quod labore temporibus nemo pariatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, vel recusandae, minus consequatur nemo tenetur nulla odit quis non, sint totam perspiciatis aperiam blanditiis reprehenderit. Soluta facere consequatur quae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore consectetur adipisci? Doloribus corporis aliquid, ad accusantium repudiandae consequatur voluptate libero alias, blanditiis impedit mollitia, tenetur dolore magni ratione tempora?</p>
+                    <p class="col-md-8"><img class="border border-primary rounded imgRight"src="https://placehold.it/300x700" alt="Placeholder image">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ea ex distinctio temporibus sequi delectus non omnis quia debitis, optio voluptatem placeat iure fugiat facilis ut ullam rerum! Distinctio, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto error, eius excepturi distinctio dolorem sit animi voluptatem illum perferendis. Dicta dolorum nam modi amet voluptas similique illum soluta deleniti error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, est illo? Reiciendis maxime modi pariatur aliquam eveniet incidunt, velit quibusdam, aperiam iusto id accusamus perferendis corrupti et nihil, dolorem iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem ex, illo ducimus nihil tempora, laboriosam alias nulla fuga dolore cum atque deleniti, dolorem voluptatem quod labore temporibus nemo pariatur? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, vel recusandae, minus consequatur nemo tenetur nulla odit quis non, sint totam perspiciatis aperiam blanditiis reprehenderit. Soluta facere consequatur quae sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dolore consectetur adipisci? Doloribus corporis aliquid, ad accusantium repudiandae consequatur voluptate libero alias, blanditiis impedit mollitia, tenetur dolore magni ratione tempora?</p>
                     
                </article>
                <article class="row">
-                    <p class="col-md-8"><img class="border border-primary rounded" src="https://placehold.it/300x700" alt="Placeholder image" width="30%" height="70%" style="float: left; margin-right: 15px; margin-left: 15px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ea ex distinctio temporibus sequi delectus non omnis quia debitis, optio voluptatem placeat iure fugiat facilis ut ullam rerum! Distinctio, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto error, eius excepturi distinctio dolorem sit animi voluptatem illum perferendis. Dicta dolorum nam modi amet voluptas similique illum soluta deleniti error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, est illo? Reiciendis maxime modi pariatur aliquam eveniet incidunt, velit quibusdam, aperiam iusto id accusamus perferendis corrupti et nihil, dolorem iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem ex, illo ducimus nihil tempora, laboriosam alias nulla fuga dolore cum atque deleniti, dolorem voluptatem quod labore temporibus nemo pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusamus beatae nihil quidem ut dolorum, tempore numquam dolore voluptate reiciendis voluptatum minima, mollitia expedita molestiae? Iste sequi doloremque minus consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ut voluptas laudantium asperiores maiores amet doloremque! Corrupti accusantium, fugit impedit, dolore ratione maxime, sit quas quod optio dolorem eligendi molestias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione? Iure quae sequi ullam libero voluptate distinctio pariatur ea doloremque atque hic nulla consequuntur tempora, veritatis odit ipsam adipisci dolor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium error doloribus repellat? Facilis rem similique minima eveniet voluptatem eligendi dolores enim, quam consequatur commodi quia, excepturi, dolore ex possimus voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis excepturi earum praesentium dolores. Doloremque, recusandae laborum quis labore commodi, omnis explicabo nostrum rerum accusamus dicta atque officiis voluptatem, earum nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laborum, voluptatum consequatur dignissimos rem tempora ipsum odio velit magnam distinctio delectus repudiandae amet quis harum porro aut dolore minima perspiciatis.</p>
+                    <p class="col-md-8"><img class="border border-primary rounded imgLeft" src="https://placehold.it/300x700" alt="Placeholder image">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae ea ex distinctio temporibus sequi delectus non omnis quia debitis, optio voluptatem placeat iure fugiat facilis ut ullam rerum! Distinctio, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto error, eius excepturi distinctio dolorem sit animi voluptatem illum perferendis. Dicta dolorum nam modi amet voluptas similique illum soluta deleniti error. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, est illo? Reiciendis maxime modi pariatur aliquam eveniet incidunt, velit quibusdam, aperiam iusto id accusamus perferendis corrupti et nihil, dolorem iste! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci exercitationem ex, illo ducimus nihil tempora, laboriosam alias nulla fuga dolore cum atque deleniti, dolorem voluptatem quod labore temporibus nemo pariatur? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem accusamus beatae nihil quidem ut dolorum, tempore numquam dolore voluptate reiciendis voluptatum minima, mollitia expedita molestiae? Iste sequi doloremque minus consequuntur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ut voluptas laudantium asperiores maiores amet doloremque! Corrupti accusantium, fugit impedit, dolore ratione maxime, sit quas quod optio dolorem eligendi molestias. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem, ratione? Iure quae sequi ullam libero voluptate distinctio pariatur ea doloremque atque hic nulla consequuntur tempora, veritatis odit ipsam adipisci dolor. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium error doloribus repellat? Facilis rem similique minima eveniet voluptatem eligendi dolores enim, quam consequatur commodi quia, excepturi, dolore ex possimus voluptatibus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis excepturi earum praesentium dolores. Doloremque, recusandae laborum quis labore commodi, omnis explicabo nostrum rerum accusamus dicta atque officiis voluptatem, earum nulla? Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui laborum, voluptatum consequatur dignissimos rem tempora ipsum odio velit magnam distinctio delectus repudiandae amet quis harum porro aut dolore minima perspiciatis.</p>
                </article>
           </border>
      </container>
