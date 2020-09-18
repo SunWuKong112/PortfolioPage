@@ -12,7 +12,7 @@ function revealOnScroll()
                {
                     window.setTimeout(function()
                     {
-                         $this.addClass)'animated ' + $this.data('animation'));
+                         $this.addClass('animated ' + $this.data('animation'));
                     }, parseInt($this.data('timeout'), 10));
                }
                else
